@@ -406,6 +406,23 @@ p.detailstext{
 	margin-bottom:20px;
 	}	
 	
+.room{
+	position:relative;
+	height: 93px;
+	width:720px;
+	font-size: 22px;
+	background-color: #fff;
+	border-bottom: 1px #999 solid;
+	float:right;
+	padding: 10px 20px 10px 20px;
+	}	
+	
+.fakemap{
+	width:760px;
+	height:809px;
+	background-image:url(../img/stub_map.png)
+	}	
+	
 .listing{
 	position:relative;
 	height: 93px;
@@ -416,6 +433,19 @@ p.detailstext{
 	float:right;
 	padding: 10px 20px 10px 40px;
 	}	
+	
+.roomheader{
+	font-size:28px;
+	line-height:61px;
+	padding-left:15px;
+	}
+	
+.roomsubheader{
+	font-size: 18px;
+	line-height: 0px;
+	padding-left:15px;
+	color:#999;
+	}
 	
 .actorheader{
 	font-size:28px;
@@ -533,7 +563,6 @@ img.postshareimg{
 	height: auto;
 	width:760px;
 	background-color: #fff;
-	margin: 15px 15px 15px 15px;
 	}
 
 .photo{
@@ -543,7 +572,7 @@ img.postshareimg{
 	float:left; 
 	background-color: #777;
 	border: 2px #999 solid;
-	margin: 2px 2px 2px 2px;
+	margin: 4px 4px 4px 4px;
 	background-image:url(../img/stub_photo_image.png)
 	}	 
 
@@ -555,7 +584,16 @@ img.postshareimg{
 	width:240px;
 	float:left; 
 	background-color: #777;
-	border: 2px #999 solid;
+	}	  
+
+.dropdown{
+	background-image:url(../img/stub_dropdown.png);
+	font-size:26px;
+	color:#999;
+	line-height:120px;
+	padding-left:30px;
+	border-bottom: 2px gray solid;
+	margin-bottom:20px;
 	}	 
 /* item */
 

@@ -51,7 +51,8 @@ $('#settings').on('click', function(){
 	function showActions(){
 		
 		$('#settings-panel').css({display: 'block', left: '800px'});
-		animateActions();
+		$('#container').anim({translateX: '-720px', opacity: 0.5}, 0.5, 'ease-out');
+		$('#settings-panel').anim({translateX: '0px', opacity: 1}, 0.5, 'ease-out');
 	}
 
 	function animateActions(){
