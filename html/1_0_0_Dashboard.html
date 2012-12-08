@@ -19,7 +19,7 @@
 })(window.Zepto);
 </script>
 	
-    <script type="text/javascript" src="../js/kickapp.mobile.js"></script>
+    <script type="text/javascript" src="../js/kickapp.mobile.js"></script><script type="text/javascript" src="../js/iscroll.js"></script>
 <link rel="stylesheet" 
 href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" title="roboto">
 <link href="../css/global.css" rel="stylesheet" type="text/css">
@@ -32,7 +32,7 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
 
 	
     <!-- bar with global google icons -->
-        <div id='googlebar'>
+      <div id='googlebar'>
             <img class="googlelogo" src="../img/stub_googlelogo.png" width="136" height="48"> 
             <img class="googleicons" id="settings" src="../img/hdpi/10_device_access_storage.png" width="48" height="48"/> 
             <img class="googleicons" src="../img/hdpi/5_content_edit.png" width="48" height="48"/>
@@ -55,15 +55,16 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
 <!-- bar with sub options (if needed) -->
     
 
-<!-- main box of page holding content -->
-<div id="page0" class="pagebody">
+
 	<div id='optionsbar'>
     	<span class="option">PRESENT</span>
         <span class="option">FUTURE</span>
         <span class="option">PAST</span>
     </div>
+<!-- main box of page holding content -->
+<div id="wrapper">    
     <div id="pagecontainer">
-    	<div id="pagebody">
+    	<div id="page0" class="pagebody">
         
 <!-- conference brief -->
           <div class="hero">
@@ -117,13 +118,10 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
           
           </div> 
        </div>
-       </div>
-       </div>
+    </div>
   <!-- END PAGE 100 -->
 <!-- PAGE 101:  -->
  <div id="page1" class="pagebody">
-    <div id="pagecontainer">
-    	<div id="pagebody">
         
 <!-- conference brief -->
           <div class="hero">
@@ -176,10 +174,12 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
           	</div>
           
           </div> 
+      
        </div>
-       </div>
-       </div>
-  <!-- END PAGE 1 -->
+        </div>
+      </div>
+    </div>
+  </div>
 <!-- InstanceEndEditable -->
 <div id="settings-panel" class="settings">
 <!-- an action -->

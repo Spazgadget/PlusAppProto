@@ -6,10 +6,10 @@ $(function () {
 	
 
 	var theScroll;
-	function scroll() {
-    theScroll = new iScroll('pagebody');
-}
-	document.addEventListener('DOMContentLoaded', scroll, false);
+
+    theScroll = new iScroll('wrapper');
+
+	
 			
 /* tab functionality  for both 2- and 3-tab setups */
 $('#tab0').on('click', function(){
@@ -50,23 +50,16 @@ $('#settings').on('click', function(){
 
 	function showActions(){
 		
-		$('#settings-panel').css({display: 'block', left: '800px'});
-		$('#container').anim({translateX: '-720px', opacity: 0.5}, 0.5, 'ease-out');
-		$('#settings-panel').anim({translateX: '0px', opacity: 1}, 0.5, 'ease-out');
+	
+		$('#container').anim({translateX: '-720px'}, 0.35, 'ease-out');
+		$('#settings-panel').anim({opacity: 1, translateX: '-720px'}, 0.35, 'ease-out');
 	}
 
-	function animateActions(){
-		$('#container').anim({translateX: '-720px', opacity: 0.5}, 0.5, 'ease-out');
-		$('#settings-panel').anim({translateX: '0px', opacity: 1}, 0.5, 'ease-out');
-		}
-		
-	function hideActions(){
-		$('#container').anim({translateX: '0px', opacity: 1}, 0.35, 'ease-out', function () {
+		function hideActions(){
+
+
 			
-		});
-		$('#settings-panel').anim({translateX: '710px', opacity: 0}, 0.35, 'ease-out', function () {
-			
-		});
+			$('#settings-panel').css({left:'800px', top:'50px',opacity:'0'});
 		}
 	
 	/**
@@ -98,38 +91,48 @@ $('#settings').on('click', function(){
 	/**
 	 * action panel 
 	 **/
+	
 	$('#action-stream').click(function () {
+		$('#settings-panel').css({left:'800px', top:'50px',opacity:'0'});
 		document.location = "2_1_0_ConferenceStream.html";
 		//hideActions();
 	});
 	$('#action-map').click(function () {
+		$('#settings-panel').css({left:'800px', top:'50px',opacity:'0'});
 		document.location = "2_2_0_Map.html";
-		//hideActions();
 	});
 	$('#action-agenda').click(function () {
+		$('#settings-panel').css({left:'800px', top:'50px',opacity:'0'});
 		document.location = "2_3_0_Agenda.html";
 		//hideActions();
 	});
 	$('#action-attendees').click(function () {
+		$('#settings-panel').css({left:'800px', top:'50px',opacity:'0'});
 		document.location = "2_4_0_Attendees.html";
 		//hideActions();
 	});
 	$('#action-speakers').click(function () {
+		$('#settings-panel').css({left:'800px', top:'50px',opacity:'0'});
 		document.location = "2_5_0_Speakers.html";
 		//hideActions();
 	});
 	$('#action-sponsors').click(function () {
+		$('#settings-panel').css({left:'800px', top:'50px',opacity:'0'});
 		document.location = "2_6_0_Sponsors.html";
 		//hideActions();
 	});
 	$('#action-exhibitors').click(function () {
+		$('#settings-panel').css({left:'800px', top:'50px',opacity:'0'});
 		document.location = "2_7_0_Exhibitors.html";
 		//hideActions();
 	});
 	$('#action-feedback').click(function () {
+		$('#settings-panel').css({left:'800px', top:'50px',opacity:'0'});
 		document.location = "2_8_0_Feedback.html";
 		//hideActions();
 	});
+
+	
 	
 	/**
 	 * profile links 

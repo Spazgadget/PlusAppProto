@@ -19,7 +19,7 @@
 })(window.Zepto);
 </script>
 	
-    <script type="text/javascript" src="../js/kickapp.mobile.js"></script>
+    <script type="text/javascript" src="../js/kickapp.mobile.js"></script><script type="text/javascript" src="../js/iscroll.js"></script>
 <link rel="stylesheet" 
 href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" title="roboto">
 <link href="../css/global.css" rel="stylesheet" type="text/css">
@@ -109,7 +109,7 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
 			<div class="detailsheadertext">SUMMARY</div>
             	<p class="detailstext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
           </div>            
-  </div>
+  
              
           
 <!-- post -->
@@ -157,13 +157,15 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
             <div class="actorheader">#devcon5</div><div class="actorsubheader">2 people attending</div><img class="actoriconsimg" src="../img/hdpi/1_navigation_next_item.png" width="48" height="48">
        	    	 
           </div>   
-</div>
-    </div>
+		</div><!-- end page body -->
+		</div><!-- end page container -->
+</div><!-- end container -->
+
          
 
          
 <!-- end page container -->
-</div> 
+
        
 <!-- TemplateEndEditable -->
 <div id="settings-panel" class="settings">
