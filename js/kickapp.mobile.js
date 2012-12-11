@@ -43,6 +43,16 @@ $('#star').on('click', function(){
   $(this).toggleClass('starselected');
 })
 
+
+$('#gotoconf').on('click', function(){
+  document.location = "2_0_0_ConferenceHomeScreen.html";
+})
+
+
+$('#herogotoconf').on('click', function(){
+  document.location = "2_0_0_ConferenceHomeScreen.html";
+})
+
 $('#settings').on('click', function(){
 		// change view
 		showActions();
@@ -50,7 +60,7 @@ $('#settings').on('click', function(){
 
 	function showActions(){
 		
-	
+		$('#settings-panel').css('display','block');
 		$('#container').anim({translateX: '-720px'}, 0.35, 'ease-out');
 		$('#settings-panel').anim({opacity: 1, translateX: '-720px'}, 0.35, 'ease-out');
 	}
@@ -92,6 +102,11 @@ $('#settings').on('click', function(){
 	 * action panel 
 	 **/
 	
+	$('#homelink').click(function () {
+		
+		document.location = "1_0_0_Dashboard.html";
+		//hideActions();
+	});	
 	$('#action-stream').click(function () {
 		$('#settings-panel').css({left:'800px', top:'50px',opacity:'0'});
 		document.location = "2_1_0_ConferenceStream.html";
@@ -131,9 +146,33 @@ $('#settings').on('click', function(){
 		document.location = "2_8_0_Feedback.html";
 		//hideActions();
 	});
+		$('.photo').mouseover(function () {
+			$(this).children('.photobar').anim({opacity:1}, 0.2, 'linear', function () {
+			});
+		});
+				$('.photo').mouseout(function () {
+					$(this).children('.photobar').anim({opacity:0}, 0.2, 'linear', function () {
+					});
+				});
+							$('.photo').click(function () {
+								$('#bigphotoholder').css('display','block')
+								$('#bigphotoholder').anim({opacity:.8}, 0.35, 'ease-out', function () {
+								});
+							});	
+							$('#bigphotoholder').click(function () {
+									$('#bigphotoholder').css('display','none')
+									$('#bigphotoholder').css('opacity','0')
+								});
 
-	
-	
+								/**
+								 * profile links 
+								 **/
+					$('.sessionimages #gotoconf').click(function () {
+						document.location = "2_0_0_ConferenceHomeScreen.html";
+									//alert("image");
+									//hideActions();
+					});
+
 	/**
 	 * profile links 
 	 **/
