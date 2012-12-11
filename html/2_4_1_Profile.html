@@ -19,7 +19,7 @@
 })(window.Zepto);
 </script>
 	
-    <script type="text/javascript" src="../js/kickapp.mobile.js"></script>
+    <script type="text/javascript" src="../js/kickapp.mobile.js"></script><script type="text/javascript" src="../js/iscroll.js"></script>
 <link rel="stylesheet" 
 href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" title="roboto">
 <link href="../css/global.css" rel="stylesheet" type="text/css">
@@ -33,7 +33,7 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
 	
     <!-- bar with global google icons -->
         <div id='googlebar'>
-            <img class="googlelogo" src="../img/stub_googlelogo.png" width="136" height="48"> 
+            <img class="googlelogo" id="homelink" src="../img/stub_googlelogo.png" width="136" height="48"> 
             <img class="googleicons" id="settings" src="../img/hdpi/10_device_access_storage.png" width="48" height="48"/> 
             <img class="googleicons" src="../img/hdpi/5_content_edit.png" width="48" height="48"/>
             <img class="googleicons" src="../img/hdpi/2_action_search.png" width="48" height="48"/> 
@@ -51,9 +51,9 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
         </div>
     </div> 
 
-<!-- main box of page holding content -->
-    <div id="pagecontainer">
-    	<div id="pagebody"> 
+    <!-- main box of page holding content -->
+    <div id="wrapper">
+        <div id="pagecontainer">
 			<div id="page0" class="pagebody">
 <!-- actor -->
           <div class="actor" style"clear:both"><img class="actoriconsimgleft" src="../img/hdpi/6_social_cc_bcc.png" width="48" height="48">
@@ -109,57 +109,61 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
               <div class="postcontainer">
                 <div class="postheader">Ryan Brock</div>
                 <div class="postsubheader">He's awesome.  You can't believe what this guy can do. Seriously, this post is all about how great he is. Amazing.</div>
-                <div class="shareicons">
-                    <img class="postshareimg" src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/> 
-                    <img class="postshareimg" src="../img/hdpi/4_collections_go_to_today.png" width="48" height="48"/>
-                    <img class="postshareimg" src="../img/hdpi/6_social_share.png" width="48" height="48"/> 
+                 <div class="shareicons">
+                      <img class="postshareimg" src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/> 
+              <div class="smdivider"><span class="smdividerbar"></span></div>
+                      <img class="postshareimg" src="../img/hdpi/4_collections_go_to_today.png" width="48" height="48"/>
+              <div class="smdivider"><span class="smdividerbar"></span></div>
+                      <img class="postshareimg" src="../img/hdpi/6_social_share.png" width="48" height="48"/> 
+                  </div></div>
                 </div>
-              </div>   
-          </div>
 		  <div class="post">
           		<img class="posticonsimg" src="../img/xhdpi/6_social_cc_bcc.png" width="64" height="64">
               <div class="postcontainer">
                 <div class="postheader">Ryan Brock</div>
                 <div class="postsubheader">He's awesome.  You can't believe what this guy can do. Seriously, this post is all about how great he is. Amazing.</div>
-                <div class="shareicons">
-                    <img class="postshareimg" src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/> 
-                    <img class="postshareimg" src="../img/hdpi/4_collections_go_to_today.png" width="48" height="48"/>
-                    <img class="postshareimg" src="../img/hdpi/6_social_share.png" width="48" height="48"/> 
+                 <div class="shareicons">
+                      <img class="postshareimg" src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/> 
+              <div class="smdivider"><span class="smdividerbar"></span></div>
+                      <img class="postshareimg" src="../img/hdpi/4_collections_go_to_today.png" width="48" height="48"/>
+              <div class="smdivider"><span class="smdividerbar"></span></div>
+                      <img class="postshareimg" src="../img/hdpi/6_social_share.png" width="48" height="48"/> 
+                  </div></div>
                 </div>
-              </div>   
-          </div>
           
 
         
        </div><!--endpage 1--> 
-  <div id="page2" class="pagebody">  
-  	   <div class="photobox">
-       		<div class="photo"><div class="photobar"></div></div>
-       		<div class="photo"></div>
-       		<div class="photo"></div>
-       		<div class="photo"></div>
-       		<div class="photo"></div>
-       		<div class="photo"></div>
-       		<div class="photo"></div>
-       		<div class="photo"></div>
-       		<div class="photo"></div>
-       		<div class="photo"></div>
-       		<div class="photo"></div>
-       		<div class="photo"></div>
-       </div>
+       <div id="page2" class="pagebody">  
+       	   <div class="photobox">
+            		<div class="photo"><div class="photobar">Photo 1</div></div>
+            		<div class="photo"><div class="photobar">Photo 2</div></div>
+            		<div class="photo"><div class="photobar">Photo 3</div></div>
+            		<div class="photo"><div class="photobar">Photo 4</div></div>
+            		<div class="photo"><div class="photobar">Photo 5</div></div>
+            		<div class="photo"><div class="photobar">Photo 6</div></div>
+            		<div class="photo"><div class="photobar">Photo 7</div></div>
+            		<div class="photo"><div class="photobar">Photo 8</div></div>
+            		<div class="photo"><div class="photobar">Photo 9</div></div>
+            		<div class="photo"><div class="photobar">Photo10</div></div>
+            		<div class="photo"><div class="photobar">Photo 11</div></div>
+            		<div class="photo"><div class="photobar">Photo 12</div></div>
+            </div>
+            <div id="bigphotoholder"><div id="bigphoto"></div><span class="toprightcorner">X</span></div>
 
-        
-  </div><!--endpage 2--> 
-        
-    <!--end pagebody-->
-    </div>
-         
-<!-- end page container -->
-</div> 
+
+       </div><!--endpage 2-->         
+     </div>
+   </div>
+ </div>
+</div>
         
 <!-- InstanceEndEditable -->
 <div id="settings-panel" class="settings">
 <!-- an action -->
+          <div class="settingsheader">DevCon5 San Francisco</div>
+          <div class="settingshomebar" >Home
+          </div>
           <div class="actionbar" id="action-stream">Stream
        	    	<img class="titleiconsimg" src="../img/hdpi/10_device_access_storage.png" width="48" height="48"/> 
           </div>
