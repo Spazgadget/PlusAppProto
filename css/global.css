@@ -22,16 +22,32 @@ body{
 
 /* tier 1 bar (google omnipresent) */
 #googlebar {
+	position:relative;
 	width: 790px;
 	height: 93px;
 	background-color: #fff;
     top:0; left:0;
-    padding:0;
+	line-height:93px;
+	font-size:24px;
+	float:left;
+	}
+	
+.googlebartext {
+	width:auto;
+	line-height:93px;
+	font-size:30px;
+	float:left;
 	}
 
 img.googlelogo{
 	padding: 21px 20px 21px 20px;
+	float:left;
 	}	
+	
+#globalnav{
+	width:250px;
+	float:right;
+	}
 
 .googleicons{
 	float:right;
@@ -123,22 +139,22 @@ span.smdividerbar{
 	margin-top:30px;
 	}
 
-/* tier 3 bar (options) */
+/* tier 3 bar (s) */
 #optionsbar {
 	display:block;
 	width: 100%;
-	height: 50px;
+	height: 60px;
 	background-color: #999;
-	line-height:50px;
 	border-bottom: 2px #333 solid;
 	}
 	
-span.option{
+.option{
 	width: 262px;
 	float:left;
 	font-size: 22px;
 	text-align:center;
 	color: #fff;
+	line-height:60px;
 	}
 
 /* main body of page (below nav) */
@@ -209,9 +225,9 @@ span.option{
 	}
 
 .actionbar{
-	height: 93px;
+	height: 70px;
 	width:680px;
-	line-height: 93px;
+	line-height: 70px;
 	font-size: 24px;
 	background-color: #fff;
 	border-bottom: 1px #999 solid;
@@ -219,27 +235,43 @@ span.option{
 	}
 
 .settingshomebar{
-	height: 93px;
-	width:680px;
-	line-height: 93px;
-	font-size: 24px;
 	background-color: #ddd;
-	border-bottom: 1px #999 solid;
-	padding: 10px 20px 10px 20px;
 	}	
 
 .settingsheader{
-	height: 73px;
+	position:relative;
+	height: 93px;
 	width:680px;
-	line-height: 73px;
-	text-align:bottom;
-	font-size: 24px;
+	font-size: 22px;
 	background-color: #fff;
 	border-bottom: 2px #666 solid;
 	padding: 0px 20px 0px 20px;
 	}
+.accountheader{
+	position:relative;
+	height: 93px;
+	width:680px;
+	font-size: 22px;
+	background-color: #fff;
+	border-bottom: 2px #666 solid;
+	padding: 0px 20px 0px 20px;
+	}
+.traycopy{
+	position:absolute;
+	bottom:5px;
+	}
 
 #settings-panel {
+	width: 710px;
+	background-color:#fff;
+	position:absolute;
+	top:0px;
+	left:800px;
+	opacity:0;
+	display:none;
+	}
+
+#account-panel {
 	width: 710px;
 	background-color:#fff;
 	position:absolute;
@@ -281,8 +313,13 @@ img.starselected{
 
 img.titleiconsimg{
 	float: right;
-	padding:20px 5px 20px 5px;
+	padding:20px 10px 20px 10px;
 	}  
+
+img.actionimg{
+	float: right;
+	padding:11px 5px 11px 5px;
+	}
 	
 .titleicons.span.dividerbarsmall{
 	width: 2px;
@@ -304,6 +341,17 @@ img.titleiconsimg{
 	margin-bottom:20px;
 	margin-top:20px;
 	}
+	
+.communitylayout{
+	width:720px;
+	color:#333;
+	line-height: 60px;
+	font-size:24px;
+	padding:20px;
+	background-color:#fff;
+	margin-top:20px;
+	}
+	
 
 .listtext{
 	font-size:18px;
@@ -385,7 +433,7 @@ p.detailstext{
 	}	
 	
 .sessionimages{	
-	width:150px;
+	width:180px;
 	position:relative;
 	float:right;
 	}
@@ -497,7 +545,18 @@ p.detailstext{
 	border-bottom: 2px #999 solid;
 	float:right;
 	padding: 10px 20px 10px 40px;
-	}	
+	}		
+	
+.notificationlisting{
+	position:relative;
+	height: 80px;
+	width:650px;
+	font-size: 22px;
+	background-color: #fff;
+	border-bottom: 2px #999 solid;
+	float:right;
+	padding: 20px 20px 0px 40px;
+	}
 	
 .roomheader{
 	font-size:28px;
@@ -521,6 +580,13 @@ p.detailstext{
 .actorsubheader{
 	font-size: 18px;
 	line-height: 0px;
+	padding-left:48px;
+	color:#999;
+	}
+	
+.notificationsubheader{
+	font-size: 18px;
+	line-height: 30px;
 	padding-left:48px;
 	color:#999;
 	}
@@ -616,7 +682,20 @@ img.postshareimg{
 	 font-size:16px;
 	 text-align:center;
 	 margin-top:25px;
-	}  
+	} 
+
+.boxme2{
+	 border: solid 1px #999;
+	 float:left;
+	 width:120px;
+	 padding: 10px;   
+	 background: #F4F4F4;        
+	 color: #464646;
+	 line-height: 16px;
+	 font-size:16px;
+	 text-align:center;
+	 margin-top:-10px;
+	} 
 
 .icongroup3{
 	float:right;
@@ -674,7 +753,6 @@ img.postshareimg{
 	line-height:20px;
 	font-size:14px;
 	text-align:right;
-	opacity:0;
 	background-color: #777;
 	padding-right:5px;
 	color:white;
@@ -726,7 +804,7 @@ span.toprightcorner{
 }
 
 img.sharebox{
-	padding:5px 20px 5px 20px;
+	padding:0px 15px 0px 15px;
 	
 	
 }

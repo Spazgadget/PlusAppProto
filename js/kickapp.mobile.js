@@ -39,7 +39,34 @@ $('#tab2').on('click', function(){
   $('#page2').css('display','block');
 })
 
-$('#star').on('click', function(){
+			/* subtab functionality  for both 2- and 3-tab setups */
+			$('#sub0').on('click', function(){
+			  $(this).css('color:#fff');
+			  $('#sub1').css('color:#333');
+			  $('#sub2').css('color:#333');
+			  $('#subpage0').css('display','block');
+			  $('#subpage1').css('display','none');
+			  $('#subpage2').css('display','none');
+			})
+
+			$('#tab1').on('click', function(){
+			  $(this).css('color:#fff');
+			  $('#sub0').css('color:#333');
+			  $('#sub2').css('color:#333');
+			  $('#subpage0').css('display','none');
+			  $('#subpage1').css('display','block');
+			  $('#subpage2').css('display','none');
+			})
+
+			$('#tab2').on('click', function(){
+			  $(this).css('color:#fff');
+			  $('#sub0').css('color:#333');
+			  $('#sub1').css('color:#333');
+			  $('#subpage0').css('display','none');
+			  $('#subpage1').css('display','none');
+			  $('#subpage2').css('display','block');
+			})
+$('.star').on('click', function(){
   $(this).toggleClass('starselected');
 })
 
@@ -49,8 +76,8 @@ $('#gotoconf').on('click', function(){
 })
 
 
-$('#herogotoconf').on('click', function(){
-  document.location = "2_0_0_ConferenceHomeScreen.html";
+$('#gotosession').on('click', function(){
+  document.location = "2_2_2_SessionDetails.html";
 })
 
 $('#settings').on('click', function(){
@@ -61,16 +88,22 @@ $('#settings').on('click', function(){
 	function showActions(){
 		
 		$('#settings-panel').css('display','block');
-		$('#container').anim({translateX: '-720px'}, 0.35, 'ease-out');
+		$('#container').anim({opacity: .7, translateX: '-720px'}, 0.35, 'ease-out');
 		$('#settings-panel').anim({opacity: 1, translateX: '-720px'}, 0.35, 'ease-out');
+		$('#settings').on('click', function(){
+				// change view
+				hideActions();
+		})
 	}
 
-		function hideActions(){
-
-
-			
-			$('#settings-panel').css({left:'800px', top:'50px',opacity:'0'});
-		}
+	function hideActions(){
+		$('#container').anim({opacity: 1, translateX: '0px'}, 0.35, 'ease-out');
+		$('#settings-panel').anim({opacity: 0, translateX: '0px'}, 0.35, 'ease-out');
+		$('#settings').on('click', function(){
+				// change view
+				showActions();
+		})
+	}
 	
 	/**
 	 * back to home view
@@ -110,7 +143,7 @@ $('#settings').on('click', function(){
 	$('#action-stream').click(function () {
 		$('#settings-panel').css({left:'800px', top:'50px',opacity:'0'});
 		document.location = "2_1_0_ConferenceStream.html";
-		//hideActions();
+		hideActions();
 	});
 	$('#action-map').click(function () {
 		$('#settings-panel').css({left:'800px', top:'50px',opacity:'0'});
@@ -119,66 +152,66 @@ $('#settings').on('click', function(){
 	$('#action-agenda').click(function () {
 		$('#settings-panel').css({left:'800px', top:'50px',opacity:'0'});
 		document.location = "2_3_0_Agenda.html";
-		//hideActions();
+		hideActions();
 	});
 	$('#action-attendees').click(function () {
 		$('#settings-panel').css({left:'800px', top:'50px',opacity:'0'});
 		document.location = "2_4_0_Attendees.html";
-		//hideActions();
+		hideActions();
 	});
 	$('#action-speakers').click(function () {
 		$('#settings-panel').css({left:'800px', top:'50px',opacity:'0'});
 		document.location = "2_5_0_Speakers.html";
-		//hideActions();
+		hideActions();
 	});
 	$('#action-sponsors').click(function () {
 		$('#settings-panel').css({left:'800px', top:'50px',opacity:'0'});
 		document.location = "2_6_0_Sponsors.html";
-		//hideActions();
+		hideActions();
 	});
 	$('#action-exhibitors').click(function () {
 		$('#settings-panel').css({left:'800px', top:'50px',opacity:'0'});
 		document.location = "2_7_0_Exhibitors.html";
-		//hideActions();
+		hideActions();
 	});
 	$('#action-feedback').click(function () {
 		$('#settings-panel').css({left:'800px', top:'50px',opacity:'0'});
 		document.location = "2_8_0_Feedback.html";
-		//hideActions();
+		hideActions();
 	});
-		$('.photo').mouseover(function () {
-			$(this).children('.photobar').anim({opacity:1}, 0.2, 'linear', function () {
-			});
+
+	$('.photo').click(function () {
+		$('#bigphotoholder').css('display','block')
+		$('#bigphotoholder').anim({opacity:.8}, 0.35, 'ease-out', function () {
 		});
-				$('.photo').mouseout(function () {
-					$(this).children('.photobar').anim({opacity:0}, 0.2, 'linear', function () {
-					});
-				});
-							$('.photo').click(function () {
-								$('#bigphotoholder').css('display','block')
-								$('#bigphotoholder').anim({opacity:.8}, 0.35, 'ease-out', function () {
-								});
-							});	
-							$('#bigphotoholder').click(function () {
-									$('#bigphotoholder').css('display','none')
-									$('#bigphotoholder').css('opacity','0')
-								});
+	});	
+	$('#bigphotoholder').click(function () {
+		$('#bigphotoholder').css('display','none')
+		$('#bigphotoholder').css('opacity','0')
+		});
 
-								/**
-								 * profile links 
-								 **/
-					$('.sessionimages #gotoconf').click(function () {
-						document.location = "2_0_0_ConferenceHomeScreen.html";
-									//alert("image");
-									//hideActions();
-					});
 
-	/**
+	$('.sessionimages #gotoconf').click(function () {
+		document.location = "2_0_0_ConferenceHomeScreen.html";
+								
+		});
+
+	/**themeinfo
 	 * profile links 
 	 **/
-	$('.listing img').click(function () {
+	$('img.profilelink').click(function () {
 		document.location = "2_4_1_Profile.html";
-		//alert("image");
-		//hideActions();
+	});
+	
+	$('img.speakerlink').click(function () {
+		document.location = "2_5_1_SpeakerProfile.html";
+	});
+	
+	$('#signin').click(function () {
+		document.location = "1_0_0_Dashboard.html";
+	});
+	
+	$('#themeinfo').click(function () {
+		document.location = "2_3_1_ThemeDetail.html";
 	});
 });

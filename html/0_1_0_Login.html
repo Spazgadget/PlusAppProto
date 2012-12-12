@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en"><!-- InstanceBegin template="/Templates/_designtemplates.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Google App Design Templates</title>
+	<!-- InstanceEndEditable -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="author" content="Ryan Brock">
+<script src=../js/zepto.js>
+(function($) {
+    // only do this if not on a touch device
+    if (!('ontouchend' in window)) {
+        $(document).delegate('body', 'click', function(e) {
+            $(e.target).trigger('tap');
+        });
+    } 
+})(window.Zepto);
+</script>
+	
+    <script type="text/javascript" src="../js/kickapp.mobile.js"></script><script type="text/javascript" src="../js/iscroll.js"></script>
+<link rel="stylesheet" 
+href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" title="roboto">
+<link href="../css/global.css" rel="stylesheet" type="text/css">
+
+</head>  
+<body> 
+
+<div id="container">    
+    <div id="pagecontainer" style="background-color:#fff;">
+        <img src="../img/stub_biglogo.png" style=""/>
+        <div id="login" style="line-height:40px; font-size:20px; text-align:center">Sign in with your Google account<br/><br/>
+          
+          <input type="text" name="fname" size="35" autofocus style="line-height:50px; font-size:30px; margin-bottom:15px;"/><br/>
+          <input type="password" name="fname"size="35" style="line-height:50px; font-size:30px"/><br/>
+          <div id="signin" style="line-height:50px; font-size:30px; margin-bottom:15px; background-color:#ddd; text-align:center; width:400px; height:50px; margin: 50px 195px 200px 195px">Sign In</div><br/>Create a new Google account
+          
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+<script src=../js/zepto.js></script>
+</html>
