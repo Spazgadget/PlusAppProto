@@ -6,7 +6,7 @@
 	<!-- InstanceBeginEditable name="doctitle" -->
 	<title>Google App Design Templates</title>
 	<!-- InstanceEndEditable -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width">
 	<meta name="author" content="Ryan Brock">
 <script src=../js/zepto.js>
 (function($) {
@@ -19,24 +19,24 @@
 })(window.Zepto);
 </script>
 	
-    <script type="text/javascript" src="../js/kickapp.mobile.js"></script><script type="text/javascript" src="../js/iscroll.js"></script>
+    <script type="text/javascript" src="../js/kickapp.mobile.js"></script><script type="text/javascript" src="../js/iscroll.js"></script><script type="text/javascript">var whichpage = "dashboard"</script>
 <link rel="stylesheet" 
 href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" title="roboto">
 <link href="../css/global.css" rel="stylesheet" type="text/css">
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 </head>  
-<body> 
+<body><div id="ryanbox"> 
 
 <div id="container">      
 
-	
+<div id="header">	
     <!-- bar with global google icons -->
       <div id='googlebar'>
             <img class="googlelogo" id="homelink" src="../img/stub_googlelogo.png" width="48" height="48">
             <div class="googlebartext">Dashboard</div>
             <div id="globalnav">
-            <img class="googleicons" id="settings" src="../img/hdpi/10_device_access_storage.png" width="48" height="48"/> 
+            <img class="googleicons" id="settings" src="../img/ryan_notifications.png" width="48" height="48"/> 
             <img class="googleicons" src="../img/ryan_post.png" width="48" height="48"/>
             <img class="googleicons" src="../img/hdpi/2_action_search.png" width="48" height="48"/> 
             </div>
@@ -57,18 +57,19 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
 
 
 <!-- bar with sub options (if needed) -->
-    
-
-
+ 
 	<div id='optionsbar'>
     	<div class="option" id="sub0">PRESENT</div>
-        <div class="option" id="sub1">FUTURE</div>
-        <div class="option" id="sub2">PAST</div>
+        <div class="option optionoff" id="sub1">FUTURE</div>
+        <div class="option optionoff" id="sub2">PAST</div>
     </div>
+</div>  
 <!-- main box of page holding content -->
   <div id="wrapper">    
     <div id="pagecontainer">
     	<div id="page0" class="pagebody">
+
+
 
         <div class="conference">
 <!-- conference brief -->
@@ -95,14 +96,14 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
                 <div class="conference">
         <!-- conference brief -->
                   <div class="hero">
-                    	<div><img src="../img/stub_conf_hero_image.png" width="760" height="240"><div class="pluscount">+24</div></div>      
+                    	<div><img src="../img/stub_conf_hero_image.png" width="760" height="240"><div class="pluscount">+113</div></div>      
                	  </div>
 
          <!-- a title bar -->
                    <div class="titlelarge">Example Conference</div>       	  
                    <div class="conflisting">
                        <div class="confcopy">
-                           <span class="confheader">Tuesday, Dec 20 2012</span><br/><span class="confsubheader">San Francisco, CA</span>
+                           <span class="confheader">Monday, Jan 13 2013</span><br/><span class="confsubheader">San Francisco, CA</span>
                        </div>
                        <div class="sessionimages">
                          <img class="titleiconsimg" id="gotoconf" src="../img/hdpi/1_navigation_next_item.png" width="48" height="48"/>
@@ -117,14 +118,14 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
                   <div class="conference">
           <!-- conference brief -->
                     <div class="hero">
-                      	<div><img src="../img/stub_conf_hero_image.png" width="760" height="240"><div class="pluscount">+24</div></div>      
+                      	<div><img src="../img/stub_conf_hero_image.png" width="760" height="240"><div class="pluscount">+498</div></div>      
                  	  </div>
 
            <!-- a title bar -->
                      <div class="titlelarge">Example Conference</div>       	  
                      <div class="conflisting">
                          <div class="confcopy">
-                             <span class="confheader">Tuesday, Dec 20 2012</span><br/><span class="confsubheader">San Francisco, CA</span>
+                             <span class="confheader">Friday, Jan 30 2013</span><br/><span class="confsubheader">San Francisco, CA</span>
                          </div>
                          <div class="sessionimages">
                            <img class="titleiconsimg" id="gotoconf" src="../img/hdpi/1_navigation_next_item.png" width="48" height="48"/>
@@ -141,14 +142,14 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
                             <div class="conference">
                     <!-- conference brief -->
                               <div class="hero">
-                                	<div><img src="../img/stub_conf_hero_image.png" width="760" height="240"><div class="pluscount">+24</div></div>      
+                                	<div><img src="../img/stub_conf_hero_image.png" width="760" height="240"><div class="pluscount">+15</div></div>      
                            	  </div>
 
                      <!-- a title bar -->
                                <div class="titlelarge">Example Conference</div>       	  
                                <div class="conflisting">
                                    <div class="confcopy">
-                                       <span class="confheader">Tuesday, Dec 20 2012</span><br/><span class="confsubheader">San Francisco, CA</span>
+                                       <span class="confheader">Friday, Feb 1 2013</span><br/><span class="confsubheader">San Francisco, CA</span>
                                    </div>
                                    <div class="sessionimages">
                                      <img class="titleiconsimg" id="gotoconf" src="../img/hdpi/1_navigation_next_item.png" width="48" height="48"/>
@@ -209,24 +210,24 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
   <!-- END PAGE 100 -->
       <div id="page1" class="pagebody"> 
        <!-- a title bar -->
-         	  <div class="dropdown">Search Term</div>
+         	  <div class="dropdown" id="searchcopy">All Circles</div>
 
 
             <!-- session -->
             		<div class="session" style="clear:both">
                         <div class="sessiontimes">
-                            <div class="smallcopy">9:00- 10:00</div>
-                            <div class="othersstarred">2 OTHERS ATTENDING</div>
+                            <div class="smallcopy">JANUARY 13-17, 2013</div>
+                            <div class="othersstarred">CONFERENCE VENUE</div>
                             <div class="clearme"></div>
                         </div>
-                      	<div class="sessionlisting">
+                      	<div class="conflisting">
                             <div class="sessioncopy">
-                                <span class="sessionheader">Advertising with Google</span><br/><span class="sessionsubheader">Salon D</span>
+                                <span class="sessionheader">Example Conference</span><br/><span class="sessionsubheader">14 in your circles attending</span>
                             </div>
                           <div class="sessionimages">
                               <img class="titleiconsimg" id="gotoconf"  src="../img/hdpi/1_navigation_next_item.png" width="48" height="48"/>
                               <div class="smdivider"><span class="smdividerbar"></span></div>
-                              <img class="titleiconsimg" id="star" src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/> 
+                              <img class="titleiconsimg star"  src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/> 
                           </div> 
                             <div class="clearme"></div>
                       </div> 
@@ -237,18 +238,87 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
                     <!-- session -->
                     		<div class="session" style="clear:both">
                                 <div class="sessiontimes">
-                                    <div class="smallcopy">9:00- 10:00</div>
-                                    <div class="othersstarred">2 OTHERS ATTENDING</div>
+                                    <div class="smallcopy">JANUARY 28-31, 2013</div>
+                                    <div class="othersstarred">CONFERENCE VENUE</div>
                                     <div class="clearme"></div>
                                 </div>
-                              	<div class="sessionlisting">
+                              	<div class="conflisting">
                                     <div class="sessioncopy">
-                                        <span class="sessionheader">Advertising with Google</span><br/><span class="sessionsubheader">Salon D</span>
+                                        <span class="sessionheader">Example Conference</span><br/><span class="sessionsubheader">5 in your circles attending</span>
                                     </div>
                                   <div class="sessionimages">
                                       <img class="titleiconsimg" id="gotoconf"  src="../img/hdpi/1_navigation_next_item.png" width="48" height="48"/>
                                       <div class="smdivider"><span class="smdividerbar"></span></div>
-                                      <img class="titleiconsimg" id="star" src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/> 
+                                      <img class="titleiconsimg star"  src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/> 
+                                  </div> 
+                                    <div class="clearme"></div>
+                              </div> 
+                            </div>                   
+
+                    
+ 
+
+                    <!-- session -->
+                    		<div class="session" style="clear:both">
+                                <div class="sessiontimes">
+                                    <div class="smallcopy">JANUARY 28-31, 2013</div>
+                                    <div class="othersstarred">CONFERENCE VENUE</div>
+                                    <div class="clearme"></div>
+                                </div>
+                              	<div class="conflisting">
+                                    <div class="sessioncopy">
+                                        <span class="sessionheader">Example Conference</span><br/><span class="sessionsubheader">5 in your circles attending</span>
+                                    </div>
+                                  <div class="sessionimages">
+                                      <img class="titleiconsimg" id="gotoconf"  src="../img/hdpi/1_navigation_next_item.png" width="48" height="48"/>
+                                      <div class="smdivider"><span class="smdividerbar"></span></div>
+                                      <img class="titleiconsimg star"  src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/> 
+                                  </div> 
+                                    <div class="clearme"></div>
+                              </div> 
+                            </div>                   
+
+                    
+ 
+
+                    <!-- session -->
+                    		<div class="session" style="clear:both">
+                                <div class="sessiontimes">
+                                    <div class="smallcopy">JANUARY 28-31, 2013</div>
+                                    <div class="othersstarred">CONFERENCE VENUE</div>
+                                    <div class="clearme"></div>
+                                </div>
+                              	<div class="conflisting">
+                                    <div class="sessioncopy">
+                                        <span class="sessionheader">Example Conference</span><br/><span class="sessionsubheader">5 in your circles attending</span>
+                                    </div>
+                                  <div class="sessionimages">
+                                      <img class="titleiconsimg" id="gotoconf"  src="../img/hdpi/1_navigation_next_item.png" width="48" height="48"/>
+                                      <div class="smdivider"><span class="smdividerbar"></span></div>
+                                      <img class="titleiconsimg star"  src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/> 
+                                  </div> 
+                                    <div class="clearme"></div>
+                              </div> 
+                            </div>                   
+
+                    
+ 
+
+                    <!-- session -->
+                    		<div class="session" style="clear:both">
+                                <div class="sessiontimes">
+                                    <div class="smallcopy">JANUARY 28-31, 2013</div>
+                                    <div class="othersstarred">CONFERENCE VENUE</div>
+                                    <div class="clearme"></div>
+                                </div>
+                              	<div class="conflisting">
+                                    <div class="sessioncopy">
+                                        <span class="sessionheader">Example Conference</span><br/><span class="sessionsubheader">5 in your circles attending</span>
+                                    </div>
+                                  <div class="sessionimages">
+                                      <img class="titleiconsimg" id="gotoconf"  src="../img/hdpi/1_navigation_next_item.png" width="48" height="48"/>
+                                      <div class="smdivider"><span class="smdividerbar"></span></div>
+                                      <img class="titleiconsimg star"  src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/> 
                                   </div> 
                                     <div class="clearme"></div>
                               </div> 
@@ -258,18 +328,18 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
                             <!-- session -->
                             		<div class="session" style="clear:both">
                                         <div class="sessiontimes">
-                                            <div class="smallcopy">9:00- 10:00</div>
-                                            <div class="othersstarred">2 OTHERS ATTENDING</div>
+                                            <div class="smallcopy">FEBRUARY 2-5, 2013</div>
+                                            <div class="othersstarred">CONFERENCE VENUE</div>
                                             <div class="clearme"></div>
                                         </div>
-                                      	<div class="sessionlisting">
+                                      	<div class="conflisting">
                                             <div class="sessioncopy">
-                                                <span class="sessionheader">Advertising with Google</span><br/><span class="sessionsubheader">Salon D</span>
+                                                <span class="sessionheader">Example Conference</span><br/><span class="sessionsubheader">28 in your circles attending</span>
                                             </div>
                                           <div class="sessionimages">
                                               <img class="titleiconsimg" id="gotoconf"  src="../img/hdpi/1_navigation_next_item.png" width="48" height="48"/>
                                               <div class="smdivider"><span class="smdividerbar"></span></div>
-                                              <img class="titleiconsimg" id="star" src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/> 
+                                              <img class="titleiconsimg star"  src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/> 
                                           </div> 
                                             <div class="clearme"></div>
                                       </div> 
@@ -278,53 +348,49 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
                                       <!-- session -->
                                       		<div class="session" style="clear:both">
                                                   <div class="sessiontimes">
-                                                      <div class="smallcopy">9:00- 10:00</div>
-                                                      <div class="othersstarred">2 OTHERS ATTENDING</div>
+                                                      <div class="smallcopy">MARCH 20-26, 2012</div>
+                                                      <div class="othersstarred">CONFERENCE VENUE</div>
                                                       <div class="clearme"></div>
                                                   </div>
-                                                	<div class="sessionlisting">
+                                                	<div class="conflisting">
                                                       <div class="sessioncopy">
-                                                          <span class="sessionheader">Advertising with Google</span><br/><span class="sessionsubheader">Salon D</span>
+                                                          <span class="sessionheader">Example Conference</span><br/><span class="sessionsubheader">0 in your circles attending</span>
                                                       </div>
                                                     <div class="sessionimages">
                                                         <img class="titleiconsimg" id="gotoconf"  src="../img/hdpi/1_navigation_next_item.png" width="48" height="48"/>
                                                         <div class="smdivider"><span class="smdividerbar"></span></div>
-                                                        <img class="titleiconsimg" id="star" src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/> 
+                                                        <img class="titleiconsimg star"  src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/> 
                                                     </div> 
                                                       <div class="clearme"></div>
                                                 </div> 
                                               </div>                    
                     
-         </div>
-      
-       </div>
-    </div>
-  </div>
-</div><!--end wrapper-->
-<!-- InstanceEndEditable -->
-
-<div id="settings-panel" class="settings">
-          <!-- an action -->
-                    <div class="accountheader"><div class="traycopy">Account Details</div></div>
-                    <div class="actionbar settingshomebar" >Dashboard</div>
-                    <div class="actionbar" id="action-stream">Settings</div>
-                    <div class="accountheader"><div class="traycopy">Notifications</div></div>
-                    <div class="notificationlisting"><img class="actoriconsimgleft" src="../img/hdpi/6_social_group.png" width="48" height="48">
-                      <div class="notificationsubheader">Joe User +1'd your post</div>
-                      <div class="notificationsubheader">5 minutes ago</div><img class="actoriconsimg" src="../img/hdpi/1_navigation_next_item.png" width="48" height="48">
-                    </div>
-                      <div class="notificationlisting"><img class="actoriconsimgleft" src="../img/hdpi/10_device_access_alarms.png" width="48" height="48">
-                        <div class="notificationsubheader">Session Alert</div>
-                        <div class="notificationsubheader">Session start in 10 minutes</div><img class="actoriconsimg" src="../img/hdpi/1_navigation_next_item.png" width="48" height="48">
-                      </div>
-                        <div class="notificationlisting"><img class="actoriconsimgleft" src="../img/hdpi/4_collections_go_to_today.png" width="48" height="48">
-                          <div class="notificationsubheader">Conference D has an updated agenda</div>
-                          <div class="notificationsubheader">Updated 1 hour ago</div><img class="actoriconsimg" src="../img/hdpi/1_navigation_next_item.png" width="48" height="48">
-                        </div>
-                    
           </div>
+       </div>
+    </div>   <div id="settings-panel" class="settings">
+                 <!-- an action -->
+                           <div class="accountheader"><div class="traycopy">Account Details</div></div>
+                           <div class="actionbar settingshomebar" >Dashboard</div>
+                           <div class="actionbar">Settings</div>
+                           <div class="accountheader"><div class="traycopy">Notifications</div></div>
+                           <div class="notificationlisting"><img class="actoriconsimgleft" src="../img/hdpi/6_social_group.png" width="48" height="48">
+                             <div class="notificationsubheader">Joe User +1'd your post</div>
+                             <div class="notificationsubheader">5 minutes ago</div><img class="actoriconsimg" src="../img/hdpi/1_navigation_next_item.png" width="48" height="48">
+                           </div>
+                             <div class="notificationlisting"><img class="actoriconsimgleft" src="../img/hdpi/10_device_access_alarms.png" width="48" height="48">
+                               <div class="notificationsubheader">Session Alert</div>
+                               <div class="notificationsubheader">Session start in 10 minutes</div><img class="actoriconsimg" src="../img/hdpi/1_navigation_next_item.png" width="48" height="48">
+                             </div>
+                               <div class="notificationlisting"><img class="actoriconsimgleft" src="../img/hdpi/4_collections_go_to_today.png" width="48" height="48">
+                                 <div class="notificationsubheader">Conference D has an updated agenda</div>
+                                 <div class="notificationsubheader">Updated 1 hour ago</div><img class="actoriconsimg" src="../img/hdpi/1_navigation_next_item.png" width="48" height="48">
+                               </div>
 
+                 </div>
+  </div>
 
+</div><!--end ryanbox -->
+</div>
 </body>
 <script src=../js/zepto.js></script>
 <!-- InstanceEnd --></html>

@@ -6,7 +6,7 @@
 	<!-- InstanceBeginEditable name="doctitle" -->
 	<title>Map</title>
 	<!-- InstanceEndEditable -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width">
 	<meta name="author" content="Ryan Brock">
 <script src=../js/zepto.js>
 (function($) {
@@ -19,28 +19,28 @@
 })(window.Zepto);
 </script>
 	
-    <script type="text/javascript" src="../js/kickapp.mobile.js"></script><script type="text/javascript" src="../js/iscroll.js"></script>
+    <script type="text/javascript" src="../js/kickapp.mobile.js"></script><script type="text/javascript" src="../js/iscroll.js"></script><script type="text/javascript">var whichpage = "map"</script>
 <link rel="stylesheet" 
 href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" title="roboto">
 <link href="../css/global.css" rel="stylesheet" type="text/css">
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 </head>  
-<body> 
+<body><div id="ryanbox"> 
 
 <div id="container">      
 
 	
     <!-- bar with global google icons -->
       <div id='googlebar'>
-            <img class="googlelogo" id="homelink" src="../img/stub_googlelogo.png" width="48" height="48">
+            <img class="googlelogo" id="homelink" src="../img/stub_googlelogo.png" width="48" height="48"/>
             <div class="googlebartext">Conference Map</div>
             <div id="globalnav">
-            <img class="googleicons" id="settings" src="../img/hdpi/10_device_access_storage.png" width="48" height="48"/> 
-            <img class="googleicons" src="../img/ryan_post.png" width="48" height="48"/>
-            <img class="googleicons" src="../img/hdpi/2_action_search.png" width="48" height="48"/> 
+              <img class="googleicons" id="settings" src="../img/hdpi/10_device_access_storage.png" width="48" height="48"/> 
+              <img class="googleicons" src="../img/ryan_post.png" width="48" height="48"/>
+              <img class="googleicons" src="../img/hdpi/2_action_search.png" width="48" height="48"/> 
             </div>
-        </div>    
+      </div>    
             <div class="clearme"></div>
 <!-- InstanceBeginEditable name="BodyContent" -->
  
@@ -55,29 +55,33 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
         </div>
     </div>
 
+    <!-- bar with sub options (if needed) -->
+
+    	<div id='optionsbar' style="display:none">
+        	<div class="option" id="sub0">DAY 1</div>
+          <div class="option optionoff" id="sub1">DAY 2</div>
+          <div class="option optionoff" id="sub2">DAY 3</div>
+      </div>
+        
     <!-- main box of page holding content -->
     <div id="wrapper">    
         <div id="pagecontainer">
-    	<div id="page0" class="pagebody"> 
+          <div id="page0" class="pagebody"> 
         
 
           
 <!-- a title bar -->
-       	  <div class="dropdown">Conference Location</div>
+       	    <div class="dropdown">Conference Location</div>
           
 <!-- an icon nav bar -->
-          <div class="fakemap"></div>
+            <div class="fakemap"></div>
         
-  	</div>
+  	      </div>
   	
-    <div id="page1" class="pagebody"> 
+          <div id="page1" class="pagebody"> 
      <!-- a title bar -->
-       	  <div class="dropdown">Room Location</div>
+       	  <div class="dropdown">Room A</div>
 
-          
-
-
-          <!-- session -->
           		<div class="session" style="clear:both">
                       <div class="sessiontimes">
                           <div class="smallcopy">9:00-10:00</div>
@@ -93,72 +97,61 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
                              <img class="titleiconsimg star" src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/>
                         </div> 
                           <div class="clearme"></div>
-                    </div> 
-                  </div>  
+                      </div> 
+              </div>  
 
-
-                  <!-- session -->
-                  		<div class="session" style="clear:both">
+              <div class="session" style="clear:both">
                               <div class="sessiontimes">
                                   <div class="smallcopy">10:00- 11:00</div>
                                   <div class="clearme"></div>
                               </div>
                             	<div class="sessionlisting">
-                                  <div class="sessioncopy">
+                              <div class="sessioncopy">
                                       <span class="sessionheader">Session Event</span><br/><span class="sessionsubheader">Starts in 1 minute</span>
                                   </div>
-                                <div class="sessionimages">
+                              <div class="sessionimages">
                                     <img class="titleiconsimg" id="gotosession" src="../img/hdpi/1_navigation_next_item.png" width="48" height="48">
                                     <div class="smdivider"><span class="smdividerbar"></span></div>
                                      <img class="titleiconsimg star" src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/>
                                 </div> 
-                                  <div class="clearme"></div>
-                            </div> 
-                          </div>  
-
-
-                          <!-- session -->
-                          		<div class="session" style="clear:both">
+                              <div class="clearme"></div>
+                      </div> 
+                           
+              <div class="session" style="clear:both">
                                       <div class="sessiontimes">
                                           <div class="smallcopy">11:00- 12:00</div>
                                           <div class="clearme"></div>
                                       </div>
                                     	<div class="sessionlisting">
-                                          <div class="sessioncopy">
+                                      <div class="sessioncopy">
                                               <span class="sessionheader">Session Event</span><br/><span class="sessionsubheader">Starts in 1 hour</span>
                                           </div>
-                                        <div class="sessionimages">
-                                            <img class="titleiconsimg" id="gotosession" src="../img/hdpi/1_navigation_next_item.png" width="48" height="48">
-                                            <div class="smdivider"><span class="smdividerbar"></span></div>
-                                             <img class="titleiconsimg star" src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/>
-                                        </div> 
-                                          <div class="clearme"></div>
-                                    </div> 
-                                  </div>  
+                                      <div class="sessionimages">
+                                          <img class="titleiconsimg" id="gotosession" src="../img/hdpi/1_navigation_next_item.png" width="48" height="48">
+                                          <div class="smdivider"><span class="smdividerbar"></span></div>
+                                          <img class="titleiconsimg star" src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/>
+                                      </div> 
+                                      <div class="clearme"></div>
+                              </div> 
 
-
-                                  <!-- session -->
-                                  		<div class="session" style="clear:both">
+              <div class="session" style="clear:both">
                                               <div class="sessiontimes">
                                                   <div class="smallcopy">12:00-1:00</div>
                                                   <div class="clearme"></div>
                                               </div>
                                             	<div class="sessionlisting">
-                                                  <div class="sessioncopy">
+                                                <div class="sessioncopy">
                                                       <span class="sessionheader">Session Event</span><br/><span class="sessionsubheader">Starts in 2 hours</span>
                                                   </div>
                                                 <div class="sessionimages">
                                                     <img class="titleiconsimg" id="gotosession" src="../img/hdpi/1_navigation_next_item.png" width="48" height="48">
                                                     <div class="smdivider"><span class="smdividerbar"></span></div>
-                                                     <img class="titleiconsimg star" src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/>
-                                                </div> 
-                                                  <div class="clearme"></div>
-                                            </div> 
-                                          </div>  
-
-
-                                          <!-- session -->
-                                          		<div class="session" style="clear:both">
+                                                    <img class="titleiconsimg star" src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/>
+                                              </div> 
+                                              <div class="clearme"></div>
+                                      </div> 
+                                           
+              <div class="session" style="clear:both">
                                                       <div class="sessiontimes">
                                                           <div class="smallcopy">10:00- 11:00</div>
                                                           <div class="clearme"></div>
@@ -167,26 +160,26 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
                                                           <div class="sessioncopy">
                                                               <span class="sessionheader">Session Event</span><br/><span class="sessionsubheader">Room 205</span>
                                                           </div>
-                                                        <div class="sessionimages">
+                                                          <div class="sessionimages">
                                                             <img class="titleiconsimg" id="gotosession" src="../img/hdpi/1_navigation_next_item.png" width="48" height="48">
                                                             <div class="smdivider"><span class="smdividerbar"></span></div>
-                                                             <img class="titleiconsimg star" src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/>
-                                                        </div> 
+                                                            <img class="titleiconsimg star" src="../img/hdpi/3_rating_not_important.png" width="48" height="48"/>
+                                                          </div> 
                                                           <div class="clearme"></div>
-                                                    </div> 
-                                                  </div>  
-
-       </div> 
+                                                      </div> 
+                                              </div> 
         </div>
       </div>
     </div>
-  </div>
-          
+</div>
+      </div> 
+    </div>
+</div> 
 <!-- InstanceEndEditable -->
 <div id="settings-panel" class="settings">
 <!-- an action -->
   <div class="settingsheader"><div class="traycopy">Example Conference Info</div></div>
-          <div class="actionbar" >Home
+          <div class="actionbar" id="action-home">Home
           </div>
           <div class="actionbar" id="action-stream">Stream
        	    	<img class="actionimg" src="../img/ryan_rearrange.png" width="48" height="48"/>
@@ -216,6 +209,8 @@ href="//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,medium
 
 </div>
 
+
+</div><!--end ryanbox -->
 
 </body>
 <script src=../js/zepto.js></script>
